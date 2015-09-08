@@ -1,7 +1,7 @@
 <skin>
 	<!-- VU+ skin (skin.xml)  -->
 	<output id="0">
-		<resolution xres="1280" yres="720" bpp="32" />
+		<resolution xres="1920" yres="1080" bpp="32" />
 	</output>
 	<!-- Colors (#AARRGGBB) -->
 	<colors>
@@ -22,7 +22,7 @@
 	</colors>
 	<!-- Main screen colors (id=0 Framebuffer) -->
 	<windowstyle type="skinned" id="0">
-		<title offset="33,14" font="Regular;20" />
+		<title offset="33,14" font="Regular;28" />
 		<color name="Background" color="#279e9fa4" /> 
 		<color name="LabelForeground" color="#3c3c3c" />
 		<color name="ListboxBackground" color="#279e9fa4" />
@@ -81,7 +81,7 @@
 		<!-- omitting foregroundColor attribute will enable auto-assignment of color -->
 	</subtitles>
 	<!-- Main infobar -->
-	<screen name="InfoBar" flags="wfNoBorder" position="145,498" size="990,162" title="InfoBar" backgroundColor="transparent">
+	<screen name="InfoBar" flags="wfNoBorder" position="465,858" size="990,162" title="InfoBar" backgroundColor="transparent">
 		<!-- Background -->
 		<ePixmap position="0,0" zPosition="-1" size="990,162" pixmap="Vu_HD/info-bg.png" />
 		<!-- Signal Quality -->
@@ -116,44 +116,54 @@
 		</widget>
 		-->
 		<eLabel text="Tuner" position="815,125" size="60,20" font="Regular;20" backgroundColor="#d9dee2" foregroundColor="#1c1c1c" transparent="1" />
-		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="875,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="A" position="870,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="887,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="B" position="882,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="899,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="C" position="892,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="911,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="D" position="904,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">8</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="E" position="923,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="E" position="917,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">16</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="F" position="935,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="F" position="927,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">32</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="G" position="945,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="G" position="935,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">64</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.TunerInfo" render="FixedLabel" text="H" position="957,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.TunerInfo" render="FixedLabel" text="H" position="948,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="TunerInfo">TunerUseMask</convert>
 			<convert type="ValueBitTest">128</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="I" position="962,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">256</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.TunerInfo" render="FixedLabel" text="J" position="968,125" size="30,20" font="Semibold;20" foregroundColor="#5c5c5c" backgroundColor="#d9dee2" transparent="1">
+			<convert type="TunerInfo">TunerUseMask</convert>
+			<convert type="ValueBitTest">512</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<ePixmap pixmap="Vu_HD/icons/clock.png" position="862,18" zPosition="1" size="20,20" alphatest="blend" />
@@ -161,44 +171,54 @@
 			<convert type="ClockToText">Format:%H:%M</convert>
 		</widget>
 		<!-- tuners in use? -->
-		<widget source="session.FrontendInfo" render="FixedLabel" position="875,125" size="30,20" text="A" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="870,125" size="30,20" text="A" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">0,0</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="887,125" size="30,20" text="B" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="882,125" size="30,20" text="B" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">1,1</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="899,125" size="30,20" text="C" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="892,125" size="30,20" text="C" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="911,125" size="30,20" text="D" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="904,125" size="30,20" text="D" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">3,3</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="923,125" size="30,20" text="E" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="917,125" size="30,20" text="E" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">4,4</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="935,125" size="30,20" text="F" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="927,125" size="30,20" text="F" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">5,5</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="945,125" size="30,20" text="G" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="935,125" size="30,20" text="G" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">6,6</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="session.FrontendInfo" render="FixedLabel" position="957,125" size="30,20" text="H" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+		<widget source="session.FrontendInfo" render="FixedLabel" position="948,125" size="30,20" text="H" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
 			<convert type="FrontendInfo">NUMBER</convert>
 			<convert type="ValueRange">7,7</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" position="962,125" size="30,20" text="I" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">8,8</convert>
+			<convert type="ConditionalShowHide" />
+		</widget>
+		<widget source="session.FrontendInfo" render="FixedLabel" position="968,125" size="30,20" text="J" font="Semibold;20" foregroundColor="#1c1c1c" backgroundColor="#d9dee2" transparent="1">
+			<convert type="FrontendInfo">NUMBER</convert>
+			<convert type="ValueRange">9,9</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 		<!--
@@ -326,66 +346,66 @@
 	</screen>
 	<!-- Main menu -->
 	<!-- Menu screens -->
-	<screen name="menu_mainmenu" position="0,0" size="580,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
-		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="60,0" size="520,720" alphatest="blend"  transparent="1" />
+	<screen name="menu_mainmenu" position="0,0" size="754,936" title="Main menu" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="78,0" size="664,936" alphatest="blend"  transparent="1" />
 <!--
 		<eLabel text=" " position="60,0" size="520,170" zPosition="-1" backgroundColor="#27cbd0d2"  />
 		<eLabel text=" " position="60,170" size="520,500" zPosition="-1" backgroundColor="#27b9bdc1" />		
 		<eLabel text=" " position="60,670" size="520,50" zPosition="-1" backgroundColor="#27cbd0d2"  />		
 -->		
-		<eLabel text="Main menu" position="110,120" size="350,38" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
-		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H45.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27b9bdc1" transparent="1" position="84, 175" size="472,495" scrollbarMode="showOnDemand">
+		<eLabel text="Main menu" position="143,130" size="455,52" font="Regular;52" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
+		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H58.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27b9bdc1" transparent="1" position="109, 220" size="608,644" scrollbarMode="showOnDemand">
 <!--		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/FocusBar_menu01.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#acacac" position="84,190" size="370,480" transparent="1" backgroundColor="#ececec" scrollbarMode="showNever"> -->
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (30, 8), size = (410, 28), flags = RT_HALIGN_LEFT, text = 0  ) ],
-				 "fonts": [gFont("Regular", 28)],
-				 "itemHeight": 45
+				{"template": [	MultiContentEntryText(pos = (39, 10), size = (533, 36), flags = RT_HALIGN_LEFT, text = 0  ) ],
+				 "fonts": [gFont("Regular", 38)],
+				 "itemHeight": 58
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">dvd_player</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">filecommand</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>		
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Subtitles.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Subtitles.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">subtitle_selection</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Setup.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Setup.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">setup_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Standby.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Standby.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Plugin.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Plugin.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">plugin_selection</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Info.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Info.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">info_screen</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_Plugin_All_title.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">scart_switch</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Timer.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Timer.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">timer_edit</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Media.png" position="475,70" size="88,88" alphatest="blend">
+		<widget source="menu" render="Pixmap" pixmap="Vu_HD/menu/ico_menu_Media.png" position="617,91" size="88,88" alphatest="blend">
 			<convert type="MenuEntryCompare">media_player</convert>
 			<convert type="ConditionalShowHide" />
 		</widget>
 	</screen>
 	<!-- Movieplayer infobar -->
-	<screen name="MoviePlayer" flags="wfNoBorder" position="200,516" size="880,162" title="InfoBar" backgroundColor="transparent">
+	<screen name="MoviePlayer" flags="wfNoBorder" position="center,858" size="880,162" title="InfoBar" backgroundColor="transparent">
 		<!-- Background -->
 		<ePixmap position="0,0" zPosition="-1" size="880,144" pixmap="Vu_HD/Bg_Media_info.png" />
 		<ePixmap position="35,18" size="37,28" pixmap="Vu_HD/menu/ico_title_media-info.png" alphatest="blend" />		
@@ -421,7 +441,7 @@
 
 	<!-- Vu_HD skin (Vu_HD.xml)  -->
 	<!-- About screen -->
-	<screen name="About" position="209,48" size="865,623" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="About" position="center,center" size="865,623" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Info.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="About" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -437,7 +457,7 @@
 		<widget source="hddA" render="Label" position="110,467" size="600,72" foregroundColor="#3c3c3c" backgroundColor="#27b5b9bd" font="Regular;22" transparent="1" />
 	</screen>
 	<!-- Adapter setup -->
-	<screen name="AdapterSetup" position="209,48" size="865,623" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="AdapterSetup" position="center,center" size="865,623" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Network Setup" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -473,7 +493,7 @@
 		<widget name="VKeyIcon" pixmap="Vu_HD/buttons/key_text.png" position="160,510" zPosition="10" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="Vu_HD/vkey_icon.png" position="310,445" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="AdapterSetupConfiguration" position="209,48" size="865,623" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="AdapterSetupConfiguration" position="center,center" size="865,623" title="Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Network Configuration..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -537,49 +557,49 @@
 		<widget name="menu" position="10,10" transparent="1" size="290,225" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Channel context menu -->
-	<screen name="ChannelContextMenu" position="0,0" size="1280,720" zPosition="2" title="Channellist menu" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="280,90" size="520,538" zPosition="-1" alphatest="on" />
-		<eLabel text="Channellist menu" position="349,135" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#27b5b9bd" transparent="1" />
-		<widget name="menu" position="295,173" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,420" scrollbarMode="showOnDemand" />
+	<screen name="ChannelContextMenu" position="center,center" size="520,538" zPosition="2" title="Channellist menu" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
+		<eLabel text="Channellist menu" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#27b5b9bd" transparent="1" />
+		<widget name="menu" position="15,83" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,420" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Channel selection - TV -->
-	<screen name="ChannelSelection" position="145, 55" size="990,610" flags="wfNoBorder" backgroundColor="transparent">
-		<ePixmap pixmap="Vu_HD/Bg_List.png" position="0,0" size="990,610" zPosition="-1" alphatest="on"  transparent="1" />
-		<ePixmap pixmap="Vu_HD/icons/ico_Chlist_title.png" position="44,37" size="38,34" alphatest="blend"  transparent="1" />
-		<widget source="Title" render="Label" position="95,40" size="700,32" zPosition="3" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />
+	<screen name="ChannelSelection" position="465, 55" size="990,910" flags="wfNoBorder" backgroundColor="transparent">
+		<ePixmap pixmap="Vu_HD/Bg_List_910.png" position="0,0" size="990,910" zPosition="-1" alphatest="on"  transparent="1" />
+		<ePixmap pixmap="Vu_HD/icons/ico_Chlist_title.png" position="44,57" size="38,34" alphatest="blend"  transparent="1" />
+		<widget source="Title" render="Label" position="95,60" size="700,62" zPosition="3" font="Semiboldit;36" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />
 <!--		<widget name="etitle" position="95,43" size="450,32" font="Semiboldit;32" halign="left" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />-->
-		<ePixmap pixmap="Vu_HD/buttons/red.png" position="44,82" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Vu_HD/buttons/green.png" position="271,82" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="498,82" size="25,25" alphatest="blend" />
-		<ePixmap pixmap="Vu_HD/buttons/blue.png" position="725,82" size="25,25" alphatest="blend" />
-		<widget name="key_red" position="89,84" zPosition="1" size="182,20" font="Regular;20" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
-		<widget name="key_green" position="316,84" zPosition="1" size="182,20" font="Regular;20" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
-		<widget name="key_yellow" position="543,84" zPosition="1" size="182,20" font="Regular;20" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
-		<widget name="key_blue" position="770,84" zPosition="1" size="182,20" font="Regular;20" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
-		<widget name="list" position="30,127" size="615,462" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" foregroundColorServiceNotAvail="#6c6c6c" serviceItemHeight="42" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Semibold;21" transparent="1" />
-		<eLabel text=" " backgroundColor="#9c9c9c" position="655,127" size="2,450" />
-		<widget source="ServiceEvent" render="Label" position="670,130" zPosition="1" size="300,24" foregroundColor="#07255d" backgroundColor="#27d8dee2" font="Semibold;24" noWrap="1" transparent="1">
+		<ePixmap pixmap="Vu_HD/buttons/red.png" position="44,129" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="Vu_HD/buttons/green.png" position="271,129" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="498,129" size="25,25" alphatest="blend" />
+		<ePixmap pixmap="Vu_HD/buttons/blue.png" position="725,129" size="25,25" alphatest="blend" />
+		<widget name="key_red" position="89,131" zPosition="1" size="182,20" font="Regular;28" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
+		<widget name="key_green" position="316,131" zPosition="1" size="182,20" font="Regular;28" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
+		<widget name="key_yellow" position="543,131" zPosition="1" size="182,20" font="Regular;28" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
+		<widget name="key_blue" position="770,131" zPosition="1" size="182,20" font="Regular;28" halign="left" valign="center" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" transparent="1" />
+		<widget name="list" position="30,177" size="615,672" zPosition="3" scrollbarMode="showOnDemand" foregroundColor="#1c1c1c" backgroundColor="#27ebebeb" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" foregroundColorServiceNotAvail="#6c6c6c" serviceItemHeight="42" serviceNumberFont="Regular;24" serviceNameFont="Regular;24" serviceInfoFont="Semibold;21" transparent="1" />
+		<eLabel text=" " backgroundColor="#9c9c9c" position="655,167" size="2,700" />
+		<widget source="ServiceEvent" render="Label" position="670,177" zPosition="1" size="300,24" foregroundColor="#07255d" backgroundColor="#27d8dee2" font="Semibold;24" noWrap="1" transparent="1">
 			<convert type="EventName">Name</convert>
 		</widget>
-		<ePixmap pixmap="Vu_HD/icons/clock.png" position="880,50" zPosition="1" size="20,20" alphatest="blend" />
-		<widget source="global.CurrentTime" render="Label" position="900,52" zPosition="1" size="50,20" font="Regular;20" foregroundColor="#1c1c1c" backgroundColor="#27d8dee2" halign="right" transparent="1">
+		<ePixmap pixmap="Vu_HD/icons/clock.png" position="860,70" zPosition="1" size="20,20" alphatest="blend" />
+		<widget source="global.CurrentTime" render="Label" position="860,72" zPosition="1" size="80,20" font="Regular;24" foregroundColor="#1c1c1c" backgroundColor="#27d8dee2" halign="right" transparent="1">
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="670,160" zPosition="1" size="300,24" font="Regular;24" foregroundColor="#07255d" backgroundColor="#27d8dee2" halign="left" noWrap="1" transparent="1">
+		<widget source="ServiceEvent" render="Label" position="670,207" zPosition="1" size="300,24" font="Regular;24" foregroundColor="#07255d" backgroundColor="#27d8dee2" halign="left" noWrap="1" transparent="1">
 			<convert type="ServiceName">Name</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="670,190" zPosition="1" size="50,22" font="Regular;20" foregroundColor="#07255d" backgroundColor="#27d8dee2"  transparent="1">
+		<widget source="ServiceEvent" render="Label" position="670,237" zPosition="1" size="50,22" font="Regular;20" foregroundColor="#07255d" backgroundColor="#27d8dee2"  transparent="1">
 			<convert type="EventTime">StartTime</convert>
 			<convert type="ClockToText"></convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="725,190" zPosition="1" size="70,22" font="Regular;20" foregroundColor="#07255d" backgroundColor="#27d8dee2"  transparent="1">
+		<widget source="ServiceEvent" render="Label" position="725,237" zPosition="1" size="70,22" font="Regular;20" foregroundColor="#07255d" backgroundColor="#27d8dee2"  transparent="1">
 			<convert type="EventTime">EndTime</convert>
 			<convert type="ClockToText">Format:- %H:%M</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Progress" position="835,195" zPosition="1" pixmap="Vu_HD/progress_medium.png" size="124,10" backgroundColor="#ffffff" >
+		<widget source="ServiceEvent" render="Progress" position="835,242" zPosition="1" pixmap="Vu_HD/progress_medium.png" size="124,10" backgroundColor="#ffffff" >
 			<convert type="EventTime">Progress</convert>
 		</widget>
-		<widget source="ServiceEvent" render="Label" position="670,220" zPosition="1" size="300,360" font="Regular;20" foregroundColor="#273c3c3c" backgroundColor="#27d8dee2"  transparent="1">
+		<widget source="ServiceEvent" render="Label" position="670,267" zPosition="1" size="300,360" font="Regular;20" foregroundColor="#273c3c3c" backgroundColor="#27d8dee2"  transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
 	</screen>
@@ -642,7 +662,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3)))
+self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 7 and 2 or 3)))
 
 		</applet>
 	</screen>
@@ -684,7 +704,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="config" position="10,30" size="420,220" />
 	</screen>
 	<!-- Default wizard -->
-	<screen name="DefaultWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="DefaultWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 			<widget name="text" position="400,100" size="550,270" font="Regular;23" />
 			<widget source="list" render="Listbox" transparent="1" position="150,300" size="600,300" scrollbarMode="showOnDemand" >
 				<convert type="StringList" />
@@ -697,20 +717,20 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<widget name="arrowup" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 			<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 	</screen>
-	<screen name="DefaultSatLists" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
-			<widget name="text" position="300,100" size="650,270" font="Regular;23" />
-			<widget source="list" render="Listbox" transparent="1" position="150,300" size="600,300" scrollbarMode="showOnDemand" >
+	<screen name="DefaultSatLists" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
+			<widget name="text" position="600,100" size="850,370" font="Regular;32" />
+			<widget source="list" render="Listbox" transparent="1" position="550,400" size="600,300" scrollbarMode="showOnDemand" >
 				<convert type="StringList" />
 			</widget>
-			<ePixmap pixmap="Vu_HD/buttons/red.png" position="150,250" size="25,25" alphatest="blend" />
-			<widget name="languagetext" position="200,253" size="120,30" font="Regular;18" />
-			<widget name="config" position="150,300" zPosition="1" size="600,300" transparent="1" scrollbarMode="showOnDemand" />            
-			<widget name="rc" pixmap="Vu_HD/rc.png" position="950,150" zPosition="10" size="154,500" transparent="1" alphatest="blend"/>
+			<ePixmap pixmap="Vu_HD/buttons/red.png" position="550,350" size="25,25" alphatest="blend" />
+			<widget name="languagetext" position="600,353" size="140,30" font="Regular;24" />
+			<widget name="config" position="550,400" zPosition="1" size="600,300" transparent="1" scrollbarMode="showOnDemand" />
+			<widget name="rc" pixmap="Vu_HD/rc.png" position="1350,250" zPosition="10" size="154,600" transparent="1" alphatest="blend"/>
 			<widget name="arrowdown" pixmap="Vu_HD/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 			<widget name="arrowup" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 			<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 	</screen>
-	<screen name="DreamPackageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="DreamPackageWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 			<widget name="text" position="300,100" size="650,270" font="Regular;23" />
 			<widget source="list" render="Listbox" transparent="1" position="150,300" size="600,300" scrollbarMode="showOnDemand" >
 				<convert type="StringList" />
@@ -728,11 +748,11 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="Dishpixmap" pixmap="Vu_HD/icons/dish.png" position="0,0" size="130,160" alphatest="off" />
 	</screen>
 	<!-- unhandled key pressed -->
-	<screen name="UnhandledKey" flags="wfNoBorder" position="1110,50" size="90,80" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
+	<screen name="UnhandledKey" flags="wfNoBorder" position="1750,50" size="90,80" title="UnhandledKey" zPosition="100" backgroundColor="transparent">
 		<widget name="UnhandledKeyPixmap" pixmap="Vu_HD/unhandled-key.png" position="0,0" size="90,80" alphatest="off" />
 	</screen>
 	<!-- EPG Selection - Single -->
-	<screen name="EPGSelection" position="209,48" size="865,624" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="EPGSelection" position="center,center" size="865,624" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" position="0,0" size="865,624" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_EPG_title.png" position="34,45" size="45,36" alphatest="blend"  transparent="1" />
 		<eLabel text="EPG Selection" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -751,7 +771,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="list" position="40,130" size="800,468" itemHeight="36" selectionPixmap="Vu_HD/buttons/FocusBar_H36.png" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- EPG Selection - Multi -->
-	<screen name="EPGSelectionMulti" position="209,48" size="865,624" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="EPGSelectionMulti" position="center,center" size="865,624" title="EPG Selection" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" position="0,0" size="865,624" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_EPG_title.png" position="34,45" size="45,36" alphatest="blend"  transparent="1" />
 		<eLabel text="EPG Selection Multi" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -777,7 +797,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="list" position="46,166" size="779,396" itemHeight="36" selectionPixmap="Vu_HD/buttons/FocusBar_H36.png" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Eventview -->
-	<screen name="EventView" position="209,48" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="EventView" position="center,center" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_EPG_title.png" position="34,45" size="45,36" alphatest="blend"  transparent="1" />
 		<eLabel text="Eventview" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -799,7 +819,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="channel" position="40,150" size="300,25" font="Semiboldit;24" foregroundColor="#1c1c1c" backgroundColor="#27d9dee2" halign="left"  transparent="1"/>
 	</screen>
 	<!-- Graphical Multi EPG -->
-	<screen name="GraphMultiEPG" position="209,48" size="865,624" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="GraphMultiEPG" position="center,center" size="865,624" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" position="0,0" size="865,624" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_EPG_title.png" position="34,45" size="45,36" alphatest="blend"  transparent="1" />
 		<eLabel text="Electronic Program Guide" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -857,7 +877,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		</widget>
 	</screen>
 	<!-- Harddisk selection -->
-	<screen name="HarddiskSelection" position="100,80" size="520,538" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="HarddiskSelection" position="center,center" size="520,538" title="Select HDD" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Select HDD" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#b5b9bd" transparent="1" />
@@ -876,7 +896,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="wait" position="20,10" size="500,25" font="Regular;23" />
 	</screen>
 	<!-- Help menu -->
-	<screen name="HelpMenu" position="0,0" size="1280,720" title="Menu" flags="wfNoBorder">
+	<screen name="HelpMenu" position="0,0" size="1920,1080" title="Menu" flags="wfNoBorder">
 		<eLabel text="help..." position="500,60" size="280,60" font="Regular;40" />
 		<widget name="list" position="100,150" size="700,456" transparent="1" scrollbarMode="showOnDemand" />
 		<widget name="rc" pixmaps="Vu_HD/rc.png,Vu_HD/rcold.png" position="950,150" zPosition="10" size="154,500" alphatest="blend" />
@@ -887,7 +907,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="long_key" position="760,660" size="250,50" font="Regular;25" halign="right" foregroundColor="yellow" />
 	</screen>
 	<!-- Image Wizard -->
-	<screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="ImageWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 			<widget name="text" position="400,100" size="550,270" font="Regular;23" />
 			<widget source="list" render="Listbox" transparent="1" position="150,300" size="600,300" scrollbarMode="showOnDemand" >
 				<convert type="StringList" />
@@ -913,7 +933,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="slider" position="10,100" size="530,15" pixmap="Vu_HD/progress_big.png" borderWidth="2" borderColor="#cccccc" />
 	</screen>
 	<!-- Language selection -->
-	<screen name="LanguageSelection" position="center,80" size="520,538" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="LanguageSelection" position="center,center" size="520,538" title="Language selection" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Language selection" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#27b5b9bd" transparent="1" />
@@ -929,7 +949,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			</convert>
 		</widget>
 	</screen>
-	<screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="LanguageWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 			<widget name="text" position="300,100" size="650,270" font="Regular;23" />
 			<widget source="languages" render="Listbox" position="150,400" size="440,210" scrollbarMode="showOnDemand" transparent="1" >
 				<convert type="TemplatedMultiContent">
@@ -948,7 +968,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 			<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 	</screen>
 	<!-- Location Box -->
-	<screen name="LocationBox" position="100,120" size="540,460" >
+	<screen name="LocationBox" position="center,center" size="540,460" >
 		<widget name="text" position="0,2" size="540,22" font="Regular;22" />
 		<widget name="target" position="0,23" size="540,22" valign="center" font="Regular;22" />
 		<widget name="filelist" position="0,55" zPosition="1" size="540,210" scrollbarMode="showOnDemand" selectionDisabled="1" />
@@ -964,7 +984,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="key_blue" position="425,415" zPosition="2" size="115,40" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />			
 	</screen>
 	<!-- Mediaplayer -->
-	<screen name="MediaPlayer" position="209,48" size="864,623" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="MediaPlayer" position="center,center" size="864,623" title="MediaPlayer" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Media.png" zPosition="-1" position="0,0" size="864,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Media.png" position="41,46" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Media Player" position="90,55" size="250,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27d9dee2" transparent="1" />
@@ -1002,70 +1022,70 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 		<widget name="titletext" position="65,80" size="0,0" />
 	</screen>
 	<!-- Menu screens -->
-	<screen name="menu_information" position="0,0" size="580,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
-		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="60,0" size="520,720" alphatest="blend"  transparent="1" />
-		<widget source="title" render="Label" position="110,120" size="400,38" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
-		<ePixmap pixmap="Vu_HD/menu/ico_menu_Info.png" position="475,70" size="88,88" alphatest="blend" transparent="1" />
-		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H45.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="84, 175" size="472,495" scrollbarMode="showOnDemand">
+	<screen name="menu_information" position="0,0" size="754,936" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
+		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="78,0" size="664,936" alphatest="blend"  transparent="1" />
+		<widget source="title" render="Label" position="143,130" size="455,52" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
+		<ePixmap pixmap="Vu_HD/menu/ico_menu_Info.png" position="617,91" size="88,88" alphatest="blend" transparent="1" />
+		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H58.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="109, 220" size="608,644" scrollbarMode="showOnDemand">
 <!--		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/FocusBar_menu01.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#acacac" position="84,190" size="370,480" transparent="1" backgroundColor="#ececec" scrollbarMode="showNever"> -->
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (30, 8), size = (410, 28), flags = RT_HALIGN_LEFT, text = 0  ) ],
-				 "fonts": [gFont("Regular", 28)],
-				 "itemHeight": 45
+				{"template": [	MultiContentEntryText(pos = (39, 10), size = (533, 36), flags = RT_HALIGN_LEFT, text = 0  ) ],
+				 "fonts": [gFont("Regular", 38)],
+				 "itemHeight": 58
 				}
 			</convert>
 		</widget>
 	</screen>		
-	<screen name="menu_shutdown" position="0,0" size="580,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
-		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="60,0" size="520,720" alphatest="blend"  transparent="1" />
-		<widget source="title" render="Label" position="110,120" size="400,38" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
-		<ePixmap pixmap="Vu_HD/menu/ico_menu_Standby.png" position="475,70" size="88,88" alphatest="blend" transparent="1" />
-		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H45.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="84, 175" size="472,495" scrollbarMode="showOnDemand">
+	<screen name="menu_shutdown" position="0,0" size="754,936" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
+		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="78,0" size="664,936" alphatest="blend"  transparent="1" />
+		<widget source="title" render="Label" position="143,130" size="455,52" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
+		<ePixmap pixmap="Vu_HD/menu/ico_menu_Standby.png" position="617,91" size="88,88" alphatest="blend" transparent="1" />
+		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H58.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="109, 220" size="608,644" scrollbarMode="showOnDemand">
 <!--		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/FocusBar_menu01.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#acacac" position="84,190" size="370,480" transparent="1" backgroundColor="#ececec" scrollbarMode="showNever"> -->
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (30, 8), size = (410, 28), flags = RT_HALIGN_LEFT, text = 0  ) ],
-				 "fonts": [gFont("Regular", 28)],
-				 "itemHeight": 45
+				{"template": [	MultiContentEntryText(pos = (39, 10), size = (533, 36), flags = RT_HALIGN_LEFT, text = 0  ) ],
+				 "fonts": [gFont("Regular", 38)],
+				 "itemHeight": 58
 				}
 			</convert>
 		</widget>
 	</screen>
-	<screen name="menu_system" position="0,0" size="580,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
-		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="60,0" size="520,720" alphatest="blend"  transparent="1" />
-		<widget source="title" render="Label" position="110,120" size="400,38" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
-		<ePixmap pixmap="Vu_HD/menu/ico_menu_Setup.png" position="475,70" size="88,88" alphatest="blend" transparent="1" />
-		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H45.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="84, 175" size="472,495" scrollbarMode="showOnDemand">
+	<screen name="menu_system" position="0,0" size="754,936" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
+		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="78,0" size="664,936" alphatest="blend"  transparent="1" />
+		<widget source="title" render="Label" position="143,130" size="455,52" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
+		<ePixmap pixmap="Vu_HD/menu/ico_menu_Setup.png" position="617,91" size="88,88" alphatest="blend" transparent="1" />
+		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H58.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="109, 220" size="608,644" scrollbarMode="showOnDemand">
 <!--		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/FocusBar_menu01.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#acacac" position="84,190" size="370,480" transparent="1" backgroundColor="#ececec" scrollbarMode="showNever"> -->
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (30, 8), size = (410, 28), flags = RT_HALIGN_LEFT, text = 0  ) ],
-				 "fonts": [gFont("Regular", 28)],
-				 "itemHeight": 45
+				{"template": [	MultiContentEntryText(pos = (39, 10), size = (533, 36), flags = RT_HALIGN_LEFT, text = 0  ) ],
+				 "fonts": [gFont("Regular", 38)],
+				 "itemHeight": 58
 				}
 			</convert>
 		</widget>
 	</screen>		
-	<screen name="Menu" position="0,0" size="580,720" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
-		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="60,0" size="520,720" alphatest="blend"  transparent="1" />
-		<ePixmap pixmap="Vu_HD/menu/ico_menu_Setup.png" position="475,70" size="88,88" alphatest="blend" transparent="1" />
-		<widget source="title" render="Label" position="110,120" size="400,38" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
+	<screen name="Menu" position="0,0" size="754,936" title="Main menu" flags="wfNoBorder" backgroundColor="transparent"> 
+		<ePixmap pixmap="Vu_HD/bg.png" zPosition="-1" position="78,0" size="664,936" alphatest="blend"  transparent="1" />
+		<ePixmap pixmap="Vu_HD/menu/ico_menu_Setup.png" position="617,91" size="88,88" alphatest="blend" transparent="1" />
+		<widget source="title" render="Label" position="143,130" size="455,52" font="Regular;38" foregroundColor="#5c5c5c" backgroundColor="#27d8dee2" transparent="1" />
 <!--		<eLabel text="" position="153,136" size="3,44" font="Regular;42" foregroundColor="#8c8c8c" backgroundColor="#ec1c1c" />		-->
-		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H45.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="84, 175" size="472,495" scrollbarMode="showOnDemand">
+		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/buttons/FocusBar_H58.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#271a53bb" backgroundColor="#27d9dee2" transparent="1" position="109, 220" size="608,644" scrollbarMode="showOnDemand">
 <!--		<widget source="menu" render="Listbox" selectionPixmap="Vu_HD/FocusBar_menu01.png" foregroundColor="#4c4c4c" foregroundColorSelected="#ececec" backgroundColorSelected="#acacac" position="84,190" size="370,480" transparent="1" backgroundColor="#ececec" scrollbarMode="showNever"> -->
 			<convert type="TemplatedMultiContent">
-				{"template": [	MultiContentEntryText(pos = (30, 8), size = (410, 28), flags = RT_HALIGN_LEFT, text = 0  ) ],
-				 "fonts": [gFont("Regular", 28)],
-				 "itemHeight": 45
+				{"template": [	MultiContentEntryText(pos = (39, 10), size = (533, 36), flags = RT_HALIGN_LEFT, text = 0  ) ],
+				 "fonts": [gFont("Regular", 38)],
+				 "itemHeight": 58
 				}
 			</convert>
 		</widget>
 	</screen>		
 	<!-- Messagebox -->
-	<screen name="MessageBox" position="center,center" size="600,10" title="Message">
-		<widget name="text" position="65,8" size="420,0" font="Regular;22" />
+	<screen name="MessageBox" position="center,center" size="900,10" title="Message">
+		<widget name="text" position="65,8" size="720,0" font="Regular;28" />
 		<widget name="ErrorPixmap" pixmap="Vu_HD/icons/input_error.png" position="5,5" size="53,53" alphatest="blend" />
 		<widget name="QuestionPixmap" pixmap="Vu_HD/icons/input_question.png" position="5,5" size="53,53" alphatest="blend" />
 		<widget name="InfoPixmap" pixmap="Vu_HD/icons/input_info.png" position="5,5" size="53,53" alphatest="blend" />
-		<widget name="list" position="100,100" size="380,375" transparent="1" backgroundColor="darkgrey" />
+		<widget name="list" position="100,100" size="680,375" transparent="1" backgroundColor="darkgrey" />
 		<applet type="onLayoutFinish">
 # this should be factored out into some helper code, but currently demonstrates applets.
 from enigma import eSize, ePoint
@@ -1111,7 +1131,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="menu" position="10,10" size="380,250" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Movieselection -->
-	<screen name="MovieSelection" position="145, 55" size="990,610" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="MovieSelection" position="center,center" size="990,610" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_List.png" position="0,0" size="990,610" zPosition="-1" alphatest="on"  transparent="1" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_media-info.png" position="44,40" size="37,28" alphatest="blend"  transparent="1" />
 		<eLabel text="Recorded files..." position="95,40" size="700,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />
@@ -1142,11 +1162,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="freeDiskSpace" position="80,560" size="830,20" font="Regular;19" backgroundColor="#27aeaeae" valign="center" halign="right" transparent="1" />
 	</screen>
 	<!-- Mute -->
-	<screen name="Mute" position="92,40" zPosition="10" size="90,80" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
+	<screen name="Mute" position="102,50" zPosition="10" size="90,80" backgroundColor="transparent" title="Mute" flags="wfNoBorder">
 		<ePixmap position="0,0" size="90,80" pixmap="Vu_HD/mute.png" transparent="1" alphatest="on" />
 	</screen>
 	<!-- Nameserver -->
-	<screen name="NameserverSetup" position="209,48" size="865,623" title="Nameserver Setup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="NameserverSetup" position="center,center" size="865,623" title="Nameserver Setup" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Nameserver Setup" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1198,7 +1218,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="introduction" position="140,490" size="300,21" zPosition="10" font="Regular;21" halign="center" transparent="1" />
 	</screen>
 	<!-- Network adapter test Black = "#000000" Grey = "#8c8c93" Green = "#1cff1c" Red = #f23d21-->
-	<screen name="NetworkAdapterTest" position="209,48" size="865,623" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="NetworkAdapterTest" position="center,center" size="865,623" title="Network test..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Network test..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1243,26 +1263,26 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="InfoText" position="40,160" size="785,430" zPosition="25" foregroundColor="#3c3c3c" backgroundColor="#27c5c9cc" font="Regular;21" />
 	</screen>
 	<!-- Network setup -->
-	<screen name="NetworkSetup" position="130,140" size="510,330" title="Network Setup">
+	<screen name="NetworkSetup" position="center,center" size="510,330" title="Network Setup">
 		<widget name="menu" position="10,10" selectionPixmap="Vu_HD/buttons/Selected_bar_440x23px.png" transparent="1" backgroundColor="#371e1c1a" size="440,310" />
 	</screen>
 	<!-- Nim selection -->
-	<screen name="NimSelection" position="center,center" size="420,330" title="Choose Tuner">
-		<widget source="nimlist" render="Listbox" transparent="1" position="0,0" size="420,300" scrollbarMode="showOnDemand">
+	<screen name="NimSelection" position="center,center" size="570,530" title="Choose Tuner">
+		<widget source="nimlist" render="Listbox" transparent="1" position="0,0" size="570,530" scrollbarMode="showOnDemand">
 			<convert type="TemplatedMultiContent">
 				{"template": [
-						MultiContentEntryText(pos = (10, 5), size = (400, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
-						MultiContentEntryText(pos = (50, 30), size = (320, 30), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
+						MultiContentEntryText(pos = (15, 10), size = (540, 30), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
+						MultiContentEntryText(pos = (50, 40), size = (470, 40), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
 					],
-				 "fonts": [gFont("Regular", 20), gFont("Regular", 15)],
-				 "itemHeight": 70
+				 "fonts": [gFont("Regular", 26), gFont("Regular", 20)],
+				 "itemHeight": 90
 				}
 			</convert>
 		</widget>
 	</screen>
 	<!-- Nim setup -->
-	<screen name="NimSetup" position="center,center" size="500,412" title="Reception Settings">
-		<widget name="config" position="10,10" transparent="1" size="480,402" scrollbarMode="showOnDemand" />
+	<screen name="NimSetup" position="center,center" size="570,500" title="Reception Settings">
+		<widget name="config" position="10,10" transparent="1" size="550,540" scrollbarMode="showOnDemand" itemHeight="28" />
 	</screen>
 	<!-- Numberzap -->
 	<screen name="NumberZap" position="center,center" size="250,60" title="Channel">
@@ -1270,7 +1290,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="number" position="145,15" size="80,25" halign="right" font="Regular;23" />
 	</screen>
 	<!-- Numerical help dialog -->
-	<screen name="NumericalTextInputHelpDialog" position="440,535" zPosition="2" size="394,124" backgroundColor="#27b5b9bd" flags="wfNoBorder">
+	<screen name="NumericalTextInputHelpDialog" position="center,705" zPosition="2" size="394,124" backgroundColor="#27b5b9bd" flags="wfNoBorder">
 <!--
 		<eLabel position="0,0" size="392,92" backgroundColor="#c0c0c0" zPosition="-1" />
 -->		
@@ -1296,7 +1316,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="servicelist" position="10,10" size="500,350" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Parental control - setup -->
-	<screen name="ParentalControlSetup" position="209,48" size="865,623" title="Parental control setup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="ParentalControlSetup" position="center,center" size="865,623" title="Parental control setup" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Parental control setup" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1322,7 +1342,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="text" position="0,0" size="600,150" font="Regular;23" />
 	</screen>
 	<!-- Plugin browser -->
-	<screen name="PluginBrowser" position="209,48" size="865,623" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginBrowser" position="center,center" size="865,623" title="Plugin browser" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Plugin browser" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1333,7 +1353,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="60,130" size="700,450" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Plugin downloads -->
-	<screen name="PluginDownloadBrowser" position="209,48" size="865,623" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginDownloadBrowser" position="center,center" size="865,623" title="Downloadable plugins" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Downloadable plugins" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1411,7 +1431,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="subpages_9" position="35,250" size="36,20" alphatest="on" />
 	</screen>
 	<!-- RDS info -->
-	<screen name="RdsInfoDisplay" position="0,0" size="1280,720" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="RdsInfoDisplay" position="0,0" size="1920,1080" zPosition="-2" backgroundColor="transparent" flags="wfNoBorder">
 		<widget name="RassLogo" pixmap="Vu_HD/icons/rass_logo.png" position="100,585" size="50,21" />
 		<widget name="RadioText" position="100,620" size="1080,30" font="Regular;24" noWrap="1" backgroundColor="transpBlack" />
 		<widget name="RtpText" position="100,650" size="1080,30" font="Regular;24" halign="right" noWrap="1" backgroundColor="transpBlack" />
@@ -1471,9 +1491,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="footer" position="10,310" size="400,20" font="Regular;20" halign="center" />
 	</screen>
 	<!-- Scart -->
-	<screen name="Scart" position="0,0" size="1280,720" backgroundColor="transparent" />
+	<screen name="Scart" position="0,0" size="1920,1080" backgroundColor="transparent" />
 	<!-- Service info -->
-	<screen name="ServiceInfo" position="209,48" size="865,623" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="ServiceInfo" position="center,center" size="865,623" title="Serviceinfo" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Info.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Serviceinfo" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1512,7 +1532,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="servicelist" position="10,135" size="400,265" selectionDisabled="1" />
 	</screen>
 	<!-- Setup -->
-	<screen name="Setup" position="209,48" size="865,624" title="Setup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="Setup" position="center,center" size="865,624" title="Setup" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" position="0,0" size="865,624" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="26,41" size="40,40" alphatest="blend"  transparent="1" />
 		<widget source="Title" render="Label" position="80,50" size="250,34" font="Semiboldit;34" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1525,7 +1545,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="45,130" itemHeight="36" foregroundColorSelected="#ebebeb" foregroundColor="#1c1c1c" selectionPixmap="Vu_HD/buttons/FocusBar_H36.png" transparent="1" size="772,432" scrollbarMode="showNever" />
 	</screen>
 	<!-- Simple channelselection -->
-	<screen name="SimpleChannelSelection" position="145, 55" size="990,610" flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="SimpleChannelSelection" position="center,center" size="990,610" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_List.png" position="0,0" size="990,610" zPosition="-1" alphatest="on"  transparent="1" />
 		<ePixmap pixmap="Vu_HD/icons/ico_Chlist_title.png" position="44,37" size="38,34" alphatest="blend"  transparent="1" />
 		<widget source="Title" render="Label" position="95,40" size="700,32" zPosition="3" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27d8dee2" transparent="1" />
@@ -1541,7 +1561,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="60,130" size="700,460" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Skin Selector -->
-	<screen name="SkinSelector" position="209,48" size="865,623" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="SkinSelector" position="center,center" size="865,623" title="Choose your Skin" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="26,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Choose your Skin" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1574,7 +1594,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 	<!-- Standby mode -->
 	<screen name="Standby" flags="wfNoBorder" position="0,0" size="720,576" title="Standby" />
 	<!-- Start Wizard -->
-	<screen name="StartWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
+	<screen name="StartWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder">
 		<widget name="text" position="303,140" size="340,300" font="Regular;22" />
 		<widget source="list" render="Listbox" position="253,440" size="440,180" scrollbarMode="showOnDemand" >
 			<convert type="StringList" />
@@ -1589,7 +1609,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="blend" />
 	</screen>
 	<!-- Network Wizard -->
-	<screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="NetworkWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 		<widget name="text" position="303,140" size="340,300" font="Regular;22" />
 		<widget source="list" render="Listbox" position="253,440" size="440,180" scrollbarMode="showOnDemand" >
 			<convert type="StringList" />
@@ -1608,7 +1628,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="HelpWindow" pixmap="Vu_HD/buttons/key_text.png" position="125,170" zPosition="1" size="1,1" transparent="1" alphatest="on" />	
 	</screen>
 	<!-- Subservice quickzap -->
-	<screen name="SubservicesQuickzap" position="124,470" size="512,200" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
+	<screen name="SubservicesQuickzap" position="center,center" size="512,200" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
 		<widget source="session.RecordState" render="Pixmap" pixmap="Vu_HD/icons/record.png" position="450,0" zPosition="2" size="14,14" alphatest="on" >
 			<convert type="ConditionalShowHide">Blink</convert>
 		</widget>
@@ -1619,16 +1639,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 	</screen>
 	<!-- Subtitle selection -->
-	<screen name="Subtitles" position="center,80" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="Subtitles" position="center,center" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Subtitles.png" position="20,38" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Subtitle selection" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#27b5b9bd" transparent="1" />
 		<widget name="config" position="15,83" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,420" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Subtitle area -->
-	<screen name="SubtitleDisplay" position="0,0" size="1280,720" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
+	<screen name="SubtitleDisplay" position="0,0" size="1920,1080" zPosition="-1" flags="wfNoBorder" backgroundColor="transparent" />
 	<!-- Time & date input -->
-	<screen name="TimeDateInput" position="160,150" size="400,200" title="Time/Date Input">
+	<screen name="TimeDateInput" position="center,center" size="400,200" title="Time/Date Input">
 		<widget name="cancel" pixmap="Vu_HD/buttons/red.png" position="10,0" size="136,40" alphatest="blend" />
 		<widget name="ok" pixmap="Vu_HD/buttons/green.png" position="260,0" size="136,40" alphatest="blend" />
 		<widget name="canceltext" position="30,0" zPosition="1" size="115,40" font="Regular;19" halign="center" valign="center" transparent="1" />
@@ -1636,7 +1656,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="config" position="10,40" transparent="1" size="380,150" />
 	</screen>
 	<!-- Timer edit -->
-	<screen name="TimerEdit" position="70,130" size="590,335" title="Timer Edit">
+	<screen name="TimerEdit" position="center,center" size="590,335" title="Timer Edit">
 		<widget name="description" position="10,10" size="580,40" font="Regular;25" />
 		<widget name="lbegin" position="405,102" size="103,30" font="Regular;25" foregroundColor="red" />
 		<widget name="lend" position="405,158" size="103,30" font="Regular;25" foregroundColor="green" />
@@ -1645,7 +1665,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="apply" position="10,240" size="250,35" />
 	</screen>
 	<!-- Timer edit list -->
-	<screen name="TimerEditList" position="209,48" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="TimerEditList" position="center,center" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Timer.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Timer List" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1664,7 +1684,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="timerlist" position="60,130" transparent="1" size="740,420" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Timer entry -->
-	<screen name="TimerEntry" position="209,48" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="TimerEntry" position="center,center" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Timer.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Timer entry" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1682,7 +1702,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text=" " position="50,470" zPosition="-1" size="760,3" font="Regular;10" foregroundColor="#1e1e1e" backgroundColor="#8c8c8c" />
 	</screen>
 	<!-- Timer log -->
-	<screen name="TimerLog" position="209,48" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="TimerLog" position="center,center" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Timer.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Timer log" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1698,7 +1718,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="logentry" position="50,450" size="760,150" font="Regular;20" foregroundColor="#3c3c3c" backgroundColor="#27aeaeae" transparent="1"/>
 	</screen>
 	<!-- Timer sanity conflict -->
-	<screen name="TimerSanityConflict" position="209,48" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="TimerSanityConflict" position="center,center" size="865,623" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Timer.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Timer sanity error" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -1715,7 +1735,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="60,320" size="700,288" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Timer Selection -->
-	<screen name="TimerSelection" position="90,120" size="550,430" title="Timer selection">
+	<screen name="TimerSelection" position="center,center" size="550,430" title="Timer selection">
 		<widget name="timerlist" position="0,45" size="550,350" scrollbarMode="showOnDemand" />
 	</screen>
 	<!-- Timeshift state -->
@@ -1732,7 +1752,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="TranslationInfo" render="Label" position="10,100" size="380,250" font="Regular;20" />
 	</screen>
 	<!-- Tutorial Wizard -->
-	<screen name="TutorialWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="TutorialWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 		<widget name="text" position="303,140" size="340,300" font="Regular;22" />
 		<widget source="list" render="Listbox" position="253,440" size="440,180" scrollbarMode="showOnDemand" >
 			<convert type="StringList" />
@@ -1998,14 +2018,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="10,100" size="540,225" selectionDisabled="1" foregroundColor="#ececec" backgroundColor="#1c2c5c" transparent="1" />
 	</screen>
 	<!-- FileBrowser -->
-	<screen name="FileBrowser" position="center,120" size="700,500" title="DVD File Browser" >
+	<screen name="FileBrowser" position="center,center" size="700,500" title="DVD File Browser" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="100,0" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="295,0" size="25,25" alphatest="blend" />
 		<widget source="key_red" render="Label" position="138,0" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="#279e9fa4" transparent="1" />
 		<widget source="key_green" render="Label" position="333,0" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="#279e9fa4" transparent="1" />
 		<widget name="filelist" position="50,50" size="600,450" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="CutListEditor" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
+	<screen name="CutListEditor" position="0,0" size="1920,1080" title="Cutlist editor" flags="wfNoBorder">
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" transparent="1" >
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2037,7 +2057,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" pointer="skin_default/position_arrow.png:3,5" backgroundColor="#2707255d" />
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="#27c2bbb2" transparent="1" />
 	</screen>
-	<screen name="DVDToolbox" position="center,120"  size="560,420" title="DVD media toolbox" >
+	<screen name="DVDToolbox" position="center,center"  size="560,420" title="DVD media toolbox" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2049,7 +2069,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="space_bar" render="Progress" position="10,390" size="540,26" borderWidth="1" backgroundColor="#254f7497" />
 		<widget source="space_label" render="Label" position="20,394" size="520,22" zPosition="2" font="Regular;18" halign="center" transparent="1" foregroundColor="#000000" />
 	</screen>
-	<screen name="ProjectSettings" position="center,120" size="560,420" title="Collection settings" >
+	<screen name="ProjectSettings" position="center,center" size="560,420" title="Collection settings" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2062,7 +2082,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="0,330" zPosition="1" size="560,2" />
 		<widget source="info" render="Label" position="10,340" size="550,80" font="Regular;18" halign="center" valign="center" />
 	</screen>
-	<screen name="TitleCutter" position="0,0" size="1280,720" title="Cutlist editor" flags="wfNoBorder">
+	<screen name="TitleCutter" position="0,0" size="1920,1080" title="Cutlist editor" flags="wfNoBorder">
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" transparent="1" >
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2094,7 +2114,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="Timeline" position="479,587" size="696,20" zPosition="3" pointer="skin_default/position_arrow.png:3,5" backgroundColor="#2707255d" />
 		<eLabel text="OK = Menu" position="1060,630" size="140,22" zPosition="1" font="Regular;20" backgroundColor="#27c2bbb2" transparent="1" />
 	</screen>
-	<screen name="TitleList" position="209,48" size="865,623" title="DVD Tool" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="TitleList" position="center,center" size="865,623" title="DVD Tool" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="DVD Tool" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2131,7 +2151,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="space_bar_dual" render="Progress" position="160,490" size="540,24" borderWidth="1" backgroundColor="#254f7497" />
 		<widget source="space_label_dual" render="Label" position="160,493" size="540,22" zPosition="2" font="Regular;18" halign="center" transparent="1" foregroundColor="#000000" />
 	</screen>
-	<screen name="DVDMovieSelection" position="center,120" size="560,425" title="Select a movie">
+	<screen name="DVDMovieSelection" position="center,center" size="560,425" title="Select a movie">
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2156,7 +2176,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget name="freeDiskSpace" position="10,405" size="540,20" font="Regular;19" valign="center" halign="right" />
 	</screen>	
-	<screen name="TitleProperties" position="center,120" size="560,425" title="Properties of current title" >
+	<screen name="TitleProperties" position="center,center" size="560,425" title="Properties of current title" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/blue.png" position="420,0" size="140,40" alphatest="blend" />
@@ -2167,7 +2187,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="thumbnail" position="370,46" size="180,144" alphatest="on" />
 		<widget name="config" position="10,196" size="540,228" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="DVDPlayer" flags="wfNoBorder" position="200,516" size="880,162" title="InfoBar" backgroundColor="transparent">
+	<screen name="DVDPlayer" flags="wfNoBorder" position="center,center" size="880,162" title="InfoBar" backgroundColor="transparent">
 		<!-- Background -->
 		<ePixmap position="0,0" zPosition="-1" size="880,144" pixmap="Vu_HD/Bg_Media_info.png" />
 		<ePixmap position="35,18" size="37,28" pixmap="Vu_HD/menu/ico_title_media-info.png" alphatest="blend" />		
@@ -2210,7 +2230,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ServicePosition">Remaining,Negate,ShowHours</convert>
 		</widget>
 	</screen>
-	<screen name="ModemSetup" position="180,100" size="320,300" title="Modem" >
+	<screen name="ModemSetup" position="center,center" size="320,300" title="Modem" >
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="10,10" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="160,10" size="140,40" alphatest="blend" />
 		<widget name="key_green" position="30,10" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
@@ -2218,7 +2238,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="list" position="10,60" size="300,120" />
 		<widget name="state" position="10,210" size="300,80" font="Regular;20" />
 	</screen>
-	<screen name="picshow" position="center,120" size="560,420" title="PicturePlayer" >
+	<screen name="picshow" position="center,center" size="560,420" title="PicturePlayer" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2244,7 +2264,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 	</screen>
-	<screen name="CleanupWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="CleanupWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 		<widget name="text" position="400,100" size="550,270" font="Regular;23" />
 		<widget source="list" render="Listbox" transparent="1" position="300,400" size="500,300" scrollbarMode="showOnDemand" >
 			<convert type="StringList" />
@@ -2259,7 +2279,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 		<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 	</screen>
-		<screen name="CleanupWizardConfiguration" position="209,48" size="865,623" title="CleanupWizard settings" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CleanupWizardConfiguration" position="center,center" size="865,623" title="CleanupWizard settings" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CleanupWizard settings" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2277,7 +2297,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text=" " position="145,460" zPosition="10" size="560,2" transparent="1" backgroundColor="#8c8c8c" />
 		<widget source="status" render="Label" position="160,525" size="540,60" zPosition="10" foregroundColor="#3c3c3c" backgroundColor="#27aeaeae" font="Regular;20" halign="center" valign="center" transparent="1"/>
 	</screen>
-	<screen name="CIselectMainMenu" position="100,80" size="520,538" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CIselectMainMenu" position="center,center" size="520,538" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CI assignment" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#b5b9bd" transparent="1" />
@@ -2287,7 +2307,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="248,93" zPosition="1" size="150,20" font="Regular;20" halign="center" valign="center" backgroundColor="#27b5b9bd" transparent="1" />
 		<widget name="CiList" position="15,125" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,336" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="CIconfigMenu" position="209,48" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CIconfigMenu" position="center,center" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CI assignment" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2310,7 +2330,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="ServiceList" position="155,310" size="550,250" zPosition="1" scrollbarMode="showOnDemand" />
 		<widget source="ServiceList_info" render="Label" position="155,310" size="550,250" zPosition="2" font="Regular;20" backgroundColor="#27d9dee2" transparent="1"  />
 	</screen>
-	<screen name="easyCIconfigMenu" position="209,48" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="easyCIconfigMenu" position="center,center" size="865,623" title="CI assignment" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CI assignment" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2329,7 +2349,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="ServiceList" position="155,230" size="550,300" zPosition="1" scrollbarMode="showOnDemand" />
 		<widget source="ServiceList_info" render="Label" position="155,230" size="550,300" zPosition="2" font="Regular;20" backgroundColor="#27d9dee2" transparent="1"  />
 	</screen>	
-	<screen name="CAidSelect" position="209,48" size="865,623" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CAidSelect" position="center,center" size="865,623" title="select CAId's" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="select CAId's" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2347,7 +2367,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="150,520" zPosition="1" size="450,2" />
 		<widget source="introduction" render="Label" position="150,530" size="450,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
 	</screen>
-	<screen name="myProviderSelection" position="209,48" size="865,623" title="Select provider to add..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="myProviderSelection" position="center,center" size="865,623" title="Select provider to add..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Select provider to add..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2367,7 +2387,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="150,510" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="150,520" size="560,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
 	</screen>
-	<screen name="myChannelSelection" position="209,48" size="865,623" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="myChannelSelection" position="center,center" size="865,623" title="Select service to add..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Select service to add..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2387,7 +2407,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="150,510" zPosition="1" size="560,2" />
 		<widget source="introduction" render="Label" position="150,520" size="560,40" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27d9dee2" transparent="1" />
 	</screen>
-	<screen name="CrashlogAutoSubmitConfiguration" position="209,48" size="865,623" title="CrashlogAutoSubmit settings" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CrashlogAutoSubmitConfiguration" position="center,center" size="865,623" title="CrashlogAutoSubmit settings" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CrashlogAutoSubmit settings" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2407,7 +2427,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="VKeyIcon" pixmap="Vu_HD/buttons/key_text.png" position="160,490" zPosition="10" size="35,25" transparent="1" alphatest="on" />
 		<widget name="HelpWindow" pixmap="Vu_HD/vkey_icon.png" position="310,400" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
-	<screen name="DefaultServiceScan" position="150,115" size="420,390" title="Service Scan">
+	<screen name="DefaultServiceScan" position="center,center" size="420,390" title="Service Scan">
 		<widget source="FrontendInfo" render="Pixmap" pixmap="Vu_HD/icons/scan-s.png" position="5,5" size="64,64" transparent="1" alphatest="blend">
 			<convert type="FrontendInfo">TYPE</convert>
 			<convert type="ValueRange">0,0</convert>
@@ -2430,7 +2450,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="scan_progress" position="10,105" size="400,15" pixmap="Vu_HD/progress_big.png" borderWidth="2" borderColor="#cccccc" />
 		<widget name="servicelist" position="10,135" size="400,265" selectionDisabled="1" />
 	</screen>
-	<screen name="DiseqcTester" position="90,100" size="520,400" title="DiSEqC Tester" >
+	<screen name="DiseqcTester" position="center,center" size="520,400" title="DiSEqC Tester" >
 		<!--ePixmap pixmap="Vu_HD/icons/dish_scan.png" position="5,25" zPosition="0" size="119,110" transparent="1" alphatest="on" />
 		<widget source="Frontend" render="Label" position="190,10" zPosition="2" size="260,20" font="Regular;19" halign="center" valign="center" transparent="1">
 			<convert type="FrontendInfo">SNRdB</convert>
@@ -2508,18 +2528,18 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 	</screen>	
-	<screen name="FPUpgrade" position="150,200" size="450,200" title="FP upgrade required" >
+	<screen name="FPUpgrade" position="center,center" size="450,200" title="FP upgrade required" >
 		<widget name="text" position="0,0" size="550,50" font="Regular;20" />
 		<widget name="oldversion_label" position="10,100" size="290,25" font="Regular;20" />
 		<widget name="newversion_label" position="10,125" size="290,25" font="Regular;20" />
 		<widget name="oldversion" position="300,100" size="50,25" font="Regular;20" />
 		<widget name="newversion" position="300,125" size="50,25" font="Regular;20" />
 	</screen>
-	<screen name="SystemMessage" position="150,200" size="450,200" title="System Message" >
+	<screen name="SystemMessage" position="center,center" size="450,200" title="System Message" >
 		<widget source="text" position="0,0" size="450,200" font="Regular;20" halign="center" valign="center" render="Label" />
 		<ePixmap pixmap="Vu_HD/icons/input_error.png" position="5,5" size="53,53" alphatest="on" />
 	</screen>
-	<screen name="NFIDownload" position="90,95" size="560,420" title="Image download utility">
+	<screen name="NFIDownload" position="center,center" size="560,420" title="Image download utility">
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" zPosition="0" size="140,40" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" zPosition="0" size="140,40" transparent="1" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" zPosition="0" size="140,40" transparent="1" alphatest="blend" />
@@ -2541,7 +2561,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="job_progresslabel" render="Label" position="130,378" zPosition="2" font="Regular;18" halign="center" transparent="1" size="300,22" foregroundColor="#000000" />
 		<widget source="statusbar" render="Label" position="10,404" size="540,16" font="Regular;16" foregroundColor="#cccccc" />
 	</screen>
-	<screen name="NFIFlash" position="90,95" size="560,420" title="Image flash utility">
+	<screen name="NFIFlash" position="center,center" size="560,420" title="Image flash utility">
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/buttons/blue.png" position="420,0" zPosition="0" size="140,40" transparent="1" alphatest="on" />
@@ -2555,7 +2575,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="job_progresslabel" render="Label" position="180,378" zPosition="2" font="Regular;18" halign="center" transparent="1" size="200,22" foregroundColor="#000000" />
 		<widget source="statusbar" render="Label" position="10,404" size="540,16" font="Regular;16" foregroundColor="#cccccc" />
 	</screen>
-	<screen name="BackupSelection" position="center,130" size="560,400" title="Select files/folders to backup">
+	<screen name="BackupSelection" position="center,center" size="560,400" title="Select files/folders to backup">
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2564,7 +2584,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="300,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		<widget name="checkList" position="5,50" size="550,250" transparent="1" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="RestoreMenu" position="center,130" size="560,400" title="Restore backups" >
+	<screen name="RestoreMenu" position="center,center" size="560,400" title="Restore backups" >
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="140,0" size="140,40" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/yellow.png" position="280,0" size="140,40" alphatest="blend" />
@@ -2573,7 +2593,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_yellow" render="Label" position="300,0" zPosition="1" size="115,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
 		<widget name="filelist" position="5,50" size="550,230" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="UpdatePluginMenu" position="209,48" size="865,623" title="Software management" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="UpdatePluginMenu" position="center,center" size="865,623" title="Software management" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Software management" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2606,7 +2626,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget source="status" render="Label" position="50,500" zPosition="10" size="750,50" halign="center" valign="center" font="Regular;22" transparent="1" backgroundColor="#27aeaeae" />
 	</screen>
-	<screen name="PluginManager" position="209,48" size="865,623" title="Extensions management" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginManager" position="center,center" size="865,623" title="Extensions management" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Extensions management" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2640,7 +2660,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget source="status" render="Label" position="50,560" zPosition="10" size="750,23" halign="center" valign="center" font="Regular;22" foregroundColor="#3c3c3c" backgroundColor="#27aeaeae" transparent="1"/>
 	</screen>
-	<screen name="PluginManagerInfo" position="209,48" size="865,623" title="Plugin manager activity information" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginManagerInfo" position="center,center" size="865,623" title="Plugin manager activity information" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Plugin manager activity information" position="90,50" size="700,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2665,7 +2685,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		</widget>
 		<widget source="status" render="Label" position="50,560" zPosition="10" size="750,44" halign="center" valign="center" foregroundColor="#3c3c3c" backgroundColor="#27aeaeae" font="Regular;22" transparent="1" />
 	</screen>
-	<screen name="PluginManagerHelp" position="209,48" size="865,623" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginManagerHelp" position="center,center" size="865,623" title="Plugin manager help" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Plugin manager help" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2687,7 +2707,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="70,550" zPosition="10" size="720,2" transparent="1" alphatest="on" />
 		<widget source="status" render="Label" position="50,560" zPosition="10" size="750,44" halign="center" valign="center" font="Regular;22" backgroundColor="#27aeaeae" transparent="1" />
 	</screen>
-	<screen name="PluginDetails" position="209,48" size="865,623" title="Plugin details" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PluginDetails" position="center,center" size="865,623" title="Plugin details" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Plugin details" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2703,7 +2723,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="detailtext" position="70,200" size="400,400" zPosition="10" font="Regular;21" foregroundColor="#3c3c3c" backgroundColor="#27aeaeae" transparent="1" halign="left" valign="top"/>
 		<widget name="screenshot" position="490,230" size="300,330" alphatest="on"/>
 	</screen>
-	<screen name="UpdatePlugin" position="209,48" size="865,623" title="Software update" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="UpdatePlugin" position="center,center" size="865,623" title="Software update" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Software update" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2712,7 +2732,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="status" render="Label" position="70,190" size="700,80" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" transparent="1" />
 		<widget name="slider" position="70,280" size="700,30"  />
 	</screen>
-	<screen name="IPKGMenu" position="209,48" size="865,623" title="Select upgrade source to edit." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="IPKGMenu" position="center,center" size="865,623" title="Select upgrade source to edit." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Select upgrade source to edit." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2724,7 +2744,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="278,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="#1c1c1c" transparent="1" />
 		<widget name="filelist" position="50,140" size="750,440" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="IPKGSource" position="209,48" size="865,623" title="Edit upgrade source url." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="IPKGSource" position="center,center" size="865,623" title="Edit upgrade source url." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Edit upgrade source url." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2736,7 +2756,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="278,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="#1c1c1c" transparent="1" />
 		<widget name="text" position="50,150" size="750,25" font="Regular;20" backgroundColor="background" foregroundColor="#cccccc" />
 	</screen>
-	<screen name="PacketManager" position="209,48" size="865,623" title="Packet manager" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PacketManager" position="center,center" size="865,623" title="Packet manager" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Packet manager" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2760,7 +2780,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 	</screen>
-	<screen name="IpkgInstaller" position="209,48" size="865,623" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="IpkgInstaller" position="center,center" size="865,623" title="Install extensions" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Plugin.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Install extensions" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2774,7 +2794,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap pixmap="Vu_HD/div-h.png" position="50,520" zPosition="10" size="750,2" transparent="1" alphatest="on" />
 		<widget source="introduction" render="Label" position="50,540" zPosition="10" size="750,30" halign="center" valign="center" font="Regular;22" transparent="1" shadowColor="black" shadowOffset="-1,-1" />
 	</screen>
-	<screen name="VideoWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+	<screen name="VideoWizard" position="0,0" size="1920,1080" title="Welcome..." flags="wfNoBorder" >
 		<widget name="text" position="400,100" size="550,270" font="Regular;23" />
 		<widget source="list" render="Listbox" transparent="1" position="300,400" size="500,300" scrollbarMode="showOnDemand" >
 			<convert type="StringList" />
@@ -2790,7 +2810,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="arrowup2" pixmap="Vu_HD/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="blend"/>
 	</screen>
 		<!-- FileBrowser -->
-	<screen name="FilebrowserScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder">
+	<screen name="FilebrowserScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder">
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2813,7 +2833,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="yellow" position="730,645" size="220,30" font="Regular;24" foregroundColor="#3c3c3c" halign="left" transparent="1" />
 		<widget name="blue" position="1020,645" size="220,30" font="Regular;24" foregroundColor="#3c3c3c" halign="left" transparent="1" />
 	</screen>
-	<screen name="FilebrowserConfigScreen" position="0,0" size="1280,720" title="" flags="wfNoBorder">
+	<screen name="FilebrowserConfigScreen" position="0,0" size="1920,1080" title="" flags="wfNoBorder">
 		<widget source="global.CurrentTime" render="Label" position="1130,40" size="80,26" font="Regular;26" halign="right" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
@@ -2832,10 +2852,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="buttonred" position="150,645" size="220,30" font="Regular;24" foregroundColor="#3c3c3c" halign="left" transparent="1" />
 		<widget name="buttongreen" position="440,645" size="220,30" font="Regular;24" foregroundColor="#3c3c3c" halign="left" transparent="1" />
 	</screen>	
-	<screen name="VideoFinetune" position="0,0" size="1280,720" backgroundColor="black">
+	<screen name="VideoFinetune" position="0,0" size="1920,1080" backgroundColor="black">
 		<widget source="Canvas" render="Canvas" position="280,70" size="720,576" />
 	</screen>
-	<screen name="RecordPathsSettings" position="209,48" size="865,623" title="Recording paths" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="RecordPathsSettings" position="center,center" size="865,623" title="Recording paths" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Recording paths" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2847,25 +2867,25 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget source="key_green" render="Label" position="278,97" zPosition="1" size="150,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="#1c1c1c" transparent="1" />
 		<widget name="config" position="50,130" itemHeight="36" size="750,300" backgroundColor="#27d9dee2" transparent="1"/>
 	</screen>	
-	<screen name="SecParameterSetup" position="209,48" size="865,623" title="Satellite Equipment Setup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="SecParameterSetup" position="center,center" size="865,623" title="Satellite Equipment Setup" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Satellite Equipment Setup" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
 		<widget name="config" position="130,140" size="600,450" transparent="1"/>
 	</screen>
-	<screen name="SatNimSelection" position="100,80" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="SatNimSelection" position="center,center" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="select Slot" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#b5b9bd" transparent="1" />
 		<widget name="nimlist" position="15,83" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,420" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="RotorNimSelection" position="100,80" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="RotorNimSelection" position="center,center" size="520,538" title="Subtitle selection" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_Subtitle.png" position="0,0" size="520,538" zPosition="-1" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="16,36" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="select Slot" position="69,45" size="400,32" font="Semiboldit;32" foregroundColor="#4c4c4c" backgroundColor="#b5b9bd" transparent="1" />
 		<widget name="nimlist" position="15,83" itemHeight="42" selectionPixmap="Vu_HD/buttons/FocusBar_H42.png" transparent="1" zPosition="1" size="490,420" scrollbarMode="showOnDemand" />
 	</screen>
-	<screen name="PositionerSetup" position="209,48" size="865,623" title="Positioner setup..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="PositionerSetup" position="center,center" size="865,623" title="Positioner setup..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Positioner setup..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2897,7 +2917,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<widget name="symbolrate_value" position="570,380" size="120,22" font="Regular;21" backgroundColor="#27d9dee2" transparent="1"/>
 		<widget name="fec_value" position="570,405" size="120,22" font="Regular;21" backgroundColor="#27d9dee2" transparent="1"/>
 	</screen>	
-	<screen name="VideoEnhancementSetup" position="209,48" size="865,623" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="VideoEnhancementSetup" position="center,center" size="865,623" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Video enhancement setup" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -2913,7 +2933,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text=" " position="50,527" size="750,2" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#5c5c5c" />
 		<widget source="introduction" render="Label" position="50,530" size="750,30" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27b5b9bd" transparent="1" />
 	</screen>
-	<screen name="VideoEnhancementPreview" position="center,360" size="560,170" title="VideoEnhancementPreview">
+	<screen name="VideoEnhancementPreview" position="center,center" size="560,170" title="VideoEnhancementPreview">
 		<ePixmap pixmap="Vu_HD/buttons/red.png" position="0,10" size="25,25" alphatest="blend" />
 		<ePixmap pixmap="Vu_HD/buttons/green.png" position="280,10" size="25,25" alphatest="blend" />
  		<widget source="key_red" render="Label" position="35,10" zPosition="1" size="140,25" font="Regular;20" halign="center" valign="center" backgroundColor="darkgrey" foregroundColor="#1c1c1c" transparent="1" />
@@ -2922,7 +2942,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<eLabel text=" " position="0,130" size="560,2" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#5c5c5c" />
  		<widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#27b5b9bd" transparent="1" />
 	</screen>	
-	<screen name="MyTubePlayerMainScreen" flags="wfNoBorder" position="280,70" size="720,576" title="MyTubePlayerMainScreen..." >
+	<screen name="MyTubePlayerMainScreen" flags="wfNoBorder" position="center,center" size="720,576" title="MyTubePlayerMainScreen..." >
 		<ePixmap position="0,0" zPosition="-1" size="720,576" pixmap="~/mytubemain_bg.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
 		<widget name="config" zPosition="2" position="60,60" size="600,50" scrollbarMode="showNever" transparent="1" />
 		<widget source="feedlist" render="Listbox" position="49,110" size="628,385" zPosition="1" scrollbarMode="showOnDemand" backgroundColorSelected="#5c8cac" transparent="1" backgroundPixmap="~/list_bg.png" selectionPixmap="~/list_sel.png" >
@@ -3003,7 +3023,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 		<ePixmap position="220,500" zPosition="4" size="140,40" pixmap="skin_default/buttons/red.png" transparent="1" alphatest="on" />
 		<widget name="key_red" position="220,500" zPosition="5" size="140,40" valign="center" halign="center" font="Regular;21" transparent="1" foregroundColor="white" shadowColor="black" shadowOffset="-1,-1" />
 	</screen>
-	<screen name="MyTubePlayer" flags="wfNoBorder" position="center,550" size="720,160" title="InfoBar" backgroundColor="transparent">
+	<screen name="MyTubePlayer" flags="wfNoBorder" position="center,center" size="720,160" title="InfoBar" backgroundColor="transparent">
 		<ePixmap position="0,0" pixmap="skin_default/info-bg_mp.png" zPosition="-1" size="720,160" />
 		<ePixmap position="29,40" pixmap="skin_default/screws_mp.png" size="665,104" alphatest="on" />
 		<ePixmap position="48,70" pixmap="skin_default/icons/mp_buttons.png" size="108,13" alphatest="on" />
@@ -3024,7 +3044,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeSuggestionsListScreen" position="340,163" zPosition="6" size="610,160" flags="wfNoBorder" >
+	<screen name="MyTubeSuggestionsListScreen" position="center,center" zPosition="6" size="610,160" flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
 		<widget source="suggestionslist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="#cccccc" backgroundColor="#1c3c5c" >
 			<convert type="TemplatedMultiContent">
@@ -3038,7 +3058,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 			</convert>
 		</widget>
 	</screen>
-	<screen name="MyTubeHistoryScreen" position="340,163" zPosition="6" size="610,160" flags="wfNoBorder" >
+	<screen name="MyTubeHistoryScreen" position="center,center" zPosition="6" size="610,160" flags="wfNoBorder" >
 		<ePixmap position="0,0" zPosition="-1" size="610,160" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/MyTube/suggestions_bg.png" alphatest="on" transparent="1" backgroundColor="transparent"/>
 		<widget source="historylist" render="Listbox" position="10,5" zPosition="7" size="580,150" scrollbarMode="showOnDemand" transparent="1" foregroundColor="#cccccc" backgroundColor="#1c3c5c" >
 			<convert type="TemplatedMultiContent">
@@ -3252,7 +3272,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 	</screen>
 
 	<!-- Crash Report Plugin -->
-	<screen name="CrashlogReportConfiguration" position="209,48" size="865,623" title="CrashlogReport Setting" flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="CrashlogReportConfiguration" position="center,center" size="865,623" title="CrashlogReport Setting" flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_list.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="CrashlogReport Setting" position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3315,7 +3335,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 
 
 	<!-- WLan Setup Plugin -->
-	<screen name="WlanSelection" position="209,48" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="WlanSelection" position="center,center" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Wireless Network Adapter Selection..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3332,7 +3352,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="description" render="Label" position="500,140" size="280,360" font="Regular;19" halign="center" valign="center" backgroundColor="#c5c9cc" transparent="1"/>
 	</screen>
 
-	<screen name="WlanSetup" position="209,48" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="WlanSetup" position="center,center" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Wireless Network Setup Menu..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3349,7 +3369,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="description" render="Label" position="500,140" size="280,360" font="Regular;19" halign="center" valign="center" backgroundColor="#c5c9cc" transparent="1"/>
 	</screen>
 
-	<screen name="WlanConfig" position="209,48" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">	
+	<screen name="WlanConfig" position="center,center" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">	
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Wireless Network Configuration..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3377,7 +3397,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
                 <widget name="HelpWindow" pixmap="Vu_HD/vkey_icon.png" position="310,535" zPosition="1" size="1,1" transparent="1" alphatest="on" />
 	</screen>
 
-	<screen name="WlanScanAp" position="209,48" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="WlanScanAp" position="center,center" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Wireless Network AP Scan..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3403,7 +3423,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget source="Status" render="Label" position="252,520" zPosition="1" size="360,30" font="Regular;20" halign="center" valign="center" backgroundColor="#27b5b9bd" foregroundColor="#1c1c1c" transparent="1" />
 	</screen>
 
-	<screen name="Wlanstatus" position="209,48" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
+	<screen name="Wlanstatus" position="center,center" size="865,623" title="Wireless Network Configuration..." flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap pixmap="Vu_HD/Bg_EPG_view.png" zPosition="-1" position="0,0" size="865,623" alphatest="on" />
 		<ePixmap pixmap="Vu_HD/menu/ico_title_Setup.png" position="32,41" size="40,40" alphatest="blend"  transparent="1" />
 		<eLabel text="Wireless Network Status..." position="90,50" size="600,32" font="Semiboldit;32" foregroundColor="#5d5d5d" backgroundColor="#27b5b9bd" transparent="1" />
@@ -3490,5 +3510,48 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
 		<widget name="config" zPosition="2" position="5,70" size="550,200" scrollbarMode="showOnDemand" transparent="1" />
 	</screen>
 
-</skin>
+	<screen name="NetDriveSetup" position="center,center" size="600,390" title="Network Drive Setup">
+		<ePixmap pixmap="skin_default/buttons/red.png" position="5,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="155,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
 
+		<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+
+		<widget name="config" position="5,70" size="590,250" scrollbarMode="showOnDemand" />
+		<widget name="introduction" position="5,335" size="590,60" font="Regular;18" halign="center" />
+		<widget name="VKeyIcon" pixmap="skin_default/buttons/key_text.png" position="565,365" zPosition="10" size="35,25" transparent="1" alphatest="on" />
+	</screen>
+
+	<screen name="NetDrivebrowser" position="center,center" size="600,390" title="NetDrive Setup > Mount Point">
+		<ePixmap pixmap="skin_default/buttons/red.png" position="5,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/green.png" position="155,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/yellow.png" position="305,0" size="140,40" alphatest="on" />
+		<ePixmap pixmap="skin_default/buttons/blue.png" position="455,0" size="140,40" alphatest="on" />
+
+		<widget source="key_red" render="Label" position="5,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_green" render="Label" position="155,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_yellow" render="Label" position="305,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" foregroundColor="#ffffff" transparent="1" />
+		<widget source="key_blue" render="Label" position="455,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#18188b" foregroundColor="#ffffff" transparent="1" />
+
+		<widget source="status" render="Label" position="0,40" zPosition="1" size="600,40" font="Regular;18" halign="center" valign="center" />
+		<widget name="filelist" position="0,80" size="600,310" scrollbarMode="showOnDemand" />
+	</screen>
+	<screen name="StreamTVPlayer" flags="wfNoBorder" position="center,870" size="1280,190" title="StreamTV Player" backgroundColor="#41000000" >
+		<ePixmap position="80,25" size="117,72" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/StreamTV/channel_background.png" zPosition="-1" transparent="1" alphatest="blend" />
+		<widget name="channel_icon" position="121,43" zPosition="10" size="35,35" backgroundColor="#41000000" />
+		<widget name="channel_name" position="250,20" size="650,40" font="Regular;36" halign="left" valign="center" foregroundColor="#ffffff" backgroundColor="#41000000" />
+		<widget name="channel_uri" position="250,70" size="950,60" font="Regular;22" halign="left" valign="top" foregroundColor="#ffffff" backgroundColor="#41000000" />
+		<widget source="session.CurrentService" render="Label" position="805,20" size="300,40" font="Regular;30" halign="right" valign="center" foregroundColor="#f4df8d" backgroundColor="#41000000" transparent="1" >
+			<convert type="ServicePosition">Position</convert>
+		</widget>
+	</screen>
+	<screen name="StreamTVList" position="center,center" size="600,380" title="StreamTV List">
+		<widget name="streamlist" position="0,0" size="600,350" backgroundColor="#000000" zPosition="10" scrollbarMode="showOnDemand" />
+		<widget name="infolabel" position="0,360" size="50,20" font="Regular;18" halign="left" />
+		<widget name="infomation" position="50,360" size="550,20" font="Regular;18" halign="left" />
+	</screen>
+</skin>
