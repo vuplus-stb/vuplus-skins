@@ -727,8 +727,8 @@
     <eLabel text=" " position="250,450" zPosition="1" size="800,2" backgroundColor="un8c8c8c" />
     <widget source="DNS1text" render="Label" position="249,461" size="220,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
     <widget source="DNS2text" render="Label" position="249,500" size="220,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
-    <widget source="DNS1" render="Label" position="663,458" size="150,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
-    <widget source="DNS2" render="Label" position="663,500" size="150,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
+    <widget source="DNS1" render="Label" position="663,458" size="360,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
+    <widget source="DNS2" render="Label" position="663,500" size="360,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
     <eLabel text=" " position="250,540" zPosition="1" size="800,2" backgroundColor="un8c8c8c" />
     <widget source="introduction" render="Label" position="250,558" size="800,30" font="Regular; 30" halign="center" transparent="1" backgroundColor="windowMainColorL" />
     <widget source="IPtext" render="Label" position="250,605" size="225,30" zPosition="1" font="Regular; 30" transparent="1" backgroundColor="windowMainColorL" />
