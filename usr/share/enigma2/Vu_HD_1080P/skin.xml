@@ -1009,7 +1009,7 @@ self.instance.move(ePoint((1920-wsizex)/2, (1080-wsizey)/(count &gt; 11 and 2 or
     <widget name="key_red" position="109,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="key_green" position="414,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="key_yellow" position="709,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
-    <widget name="key_blue" position="1009,198" zPosition="1" size="1225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="key_blue" position="1009,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="list" position="61,238" size="1200,682" font="Regular;32" itemHeight="50" transparent="1" scrollbarMode="showOnDemand" />
   </screen>
   <!-- EPG Selection - Multi -->
@@ -2948,7 +2948,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="red" position="109,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="green" position="414,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="yellow" position="709,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
-    <widget name="blue" position="1009,198" zPosition="1" size="1225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="blue" position="1009,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="list" position="300,240" size="675,233" backgroundColor="un27d9dee2" transparent="1" />
     <widget name="snr_db" position="315,533" size="225,33" halign="center" valign="center" font="Regular;31" backgroundColor="un27d9dee2" transparent="1" />
     <eLabel text="SNR:" position="225,570" size="90,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
