@@ -3396,8 +3396,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   		{"templates":
   			{"default": (81,[
   					MultiContentEntryText(pos = (140, 0), size = (560, 45), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # index 0 is vendor  - model
-  					MultiContentEntryText(pos = (140, 48), size = (140, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is Device
-  					MultiContentEntryText(pos = (330, 48), size = (155, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is Size
+  					MultiContentEntryText(pos = (140, 48), size = (150, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 1 is Device
+  					MultiContentEntryText(pos = (330, 48), size = (180, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 2 is Size
   					MultiContentEntryText(pos = (550, 48), size = (140, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 3 is Partitions
   					MultiContentEntryText(pos = (765, 48), size = (165, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 4 is Removable
   					MultiContentEntryPixmapAlphaTest(pos = (0, 80), size = (1005, 3), png = 5), # png 5 is the div pixmap
@@ -3407,7 +3407,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   					MultiContentEntryText(pos = (140, 48), size = (560, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index 2 is Mounted on
   					MultiContentEntryText(pos = (140, 81), size = (560, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # index 3 UUID
   					MultiContentEntryText(pos = (140, 114), size = (140, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # index 4 Type
-  					MultiContentEntryText(pos = (335, 114), size = (140, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 5 Size_total
+  					MultiContentEntryText(pos = (335, 114), size = (230, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # index 5 Size_total
   					MultiContentEntryText(pos = (580, 114), size = (230, 30), font=1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 5), # index 6 Size_free
   					MultiContentEntryPixmapAlphaTest(pos = (0, 146), size = (1005, 3), png = 6), # png 6 is the div pixmap
   				]),
@@ -3423,6 +3423,48 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (or
   		}
   		</convert>
     </widget>
+  </screen>
+  <screen name="MessageBoxConfirm" position="center,center" size="900,15" title="Message">
+    <widget name="text" position="98,12" size="1080,0" font="Regular;42" />
+    <widget name="ErrorPixmap" pixmap="Vu_HD_1080P/icons/input_error.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="QuestionPixmap" pixmap="Vu_HD_1080P/icons/input_question.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="InfoPixmap" pixmap="Vu_HD_1080P/icons/input_info.png" position="8,8" size="80,80" alphatest="blend" />
+    <widget name="list" position="150,150" size="1020,563" backgroundColor="windowBackground" font="Regular;32" itemHeight="50" scrollbarMode="showOnDemand" transparent="1" />
+    <applet type="onLayoutFinish">
+# this should be factored out into some helper code, but currently demonstrates applets.
+from enigma import eSize, ePoint
+
+orgwidth = self.instance.size().width()
+orgpos = self.instance.position()
+textsize = self["text"].getSize()
+
+# y size still must be fixed in font stuff...
+textsize = (textsize[0] + 90, textsize[1] + 90)
+offset = 0
+if self.type == self.TYPE_YESNO:
+	offset = 120
+wsizex = textsize[0] + 120
+wsizey = textsize[1] + offset
+if (420 &gt; wsizex):
+	wsizex = 420
+wsize = (wsizex, wsizey)
+
+
+# resize
+self.instance.resize(eSize(*wsize))
+
+# resize label
+self["text"].instance.resize(eSize(*textsize))
+
+# move list
+listsize = (wsizex, 100)
+self["list"].instance.move(ePoint(0, textsize[1]))
+self["list"].instance.resize(eSize(*listsize))
+
+# center window
+newwidth = wsize[0]
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+		</applet>
   </screen>
   <!-- ZappingModeSelection Plugin -->
   <screen name="ZappingModeSelection" position="center,center" size="560,250" title="Zapping Mode Selection">
