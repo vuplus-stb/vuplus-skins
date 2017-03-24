@@ -3612,4 +3612,13 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="key_red" render="Label" position="150,495" zPosition="1" size="140,40" font="Regular;28" halign="center" valign="center" backgroundColor="#9f1313" foregroundColor="#ffffff" transparent="1" />                                  
     <widget source="key_green" render="Label" position="450,495" zPosition="1" size="140,40" font="Regular;28" halign="center" valign="center" backgroundColor="#1f771f" foregroundColor="#ffffff" transparent="1" />                               
   </screen>
+  <screen name="WitAiSttSetup" position="center,center" size="840,440">
+    <ePixmap pixmap="Vu_HD_1080P/buttons/red.png" position="130,15" size="31,31" alphatest="blend" />
+    <ePixmap pixmap="Vu_HD_1080P/buttons/green.png" position="465,15" size="31,31" alphatest="blend" />
+    <widget source="key_red" render="Label" position="168,15" zPosition="1" size="210,45" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <widget source="key_green" render="Label" position="498,15" zPosition="1" size="210,45" font="Regular;30" halign="center" valign="center" transparent="1" />
+    <widget source="description" render="Label" position="15,75" size="810,250" font="Regular;32" halign="left" valign="center" />
+    <widget name="config" zPosition="2" position="15,330" size="810,45" font="Regular;28" itemHeight="32" transparent="1" />
+    <ePixmap pixmap="skin_default/buttons/key_text.png" position="785,380" zPosition="10" size="35,25" transparent="1" alphatest="on" />
+  </screen>
 </skin>
