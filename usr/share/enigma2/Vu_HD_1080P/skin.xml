@@ -3621,4 +3621,21 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" zPosition="2" position="15,330" size="810,45" font="Regular;28" itemHeight="32" transparent="1" />
     <ePixmap pixmap="skin_default/buttons/key_text.png" position="785,380" zPosition="10" size="35,25" transparent="1" alphatest="on" />
   </screen>
+  <screen name="CreateMultiplePipChannelEntry" position="center,center" size="1477,904" flags="wfNoBorder" backgroundColor="transparent">
+    <ePixmap pixmap="Vu_HD_1080P/Bg_List.png" position="0,0" size="1565,904" zPosition="-1" alphatest="off" />
+    <ePixmap pixmap="Vu_HD_1080P/icons/ico_Chlist_title.png" position="50,72" size="84,84" />
+    <widget source="Title" render="Label" position="140,70" size="1000,92" zPosition="3" font="Semiboldit; 52" backgroundColor="windowMainColorL" transparent="1" />
+    <ePixmap pixmap="Vu_HD_1080P/buttons/red.png" position="164,196" size="31,31" alphatest="blend" />
+    <ePixmap pixmap="Vu_HD_1080P/buttons/green.png" position="421,194" size="31,31" alphatest="blend" />
+    <ePixmap pixmap="Vu_HD_1080P/buttons/yellow.png" position="678,194" size="31,31" alphatest="blend" />
+    <ePixmap pixmap="Vu_HD_1080P/buttons/blue.png" position="945,194" size="31,31" alphatest="blend" />
+    <widget name="key_red" position="209,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="key_green" position="466,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="key_yellow" position="723,196" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="key_blue" position="989,198" zPosition="1" size="182,31" font="Regular;28" halign="left" valign="center" backgroundColor="windowMainColorH" transparent="1" />
+    <widget name="list" position="90,250" size="1250,330" serviceItemHeight="40" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Semibold;24" transparent="1" scrollbarMode="showOnDemand" />
+    <widget name="textChannels" position="90,600" size="1250,30" font="Regular;33" transparent="1" />
+    <widget name="selectedList" position="100,640" size="700,160" font="Regular;28" itemHeight="40" transparent="1" />
+    <widget name="description" position="850,730" size="650,170" font="Regular;28" halign="left" transparent="1" />
+  </screen>
 </skin>
