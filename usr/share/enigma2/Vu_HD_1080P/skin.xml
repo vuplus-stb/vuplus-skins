@@ -151,6 +151,7 @@
     <parameter name="ServiceInfo" value="0, 0, 250, 38"/>
     <parameter name="ServiceInfoLeft" value="0, 0, 250, 32"/>
     <parameter name="ServiceInfoRight" value="270, 0, 840, 32"/>
+    <parameter name="RcArrow" value="13, 44, 12, 8, 400, 200"/>
   </parameters>
   <subtitles>
     <sub name="Subtitle_TTX" font="Subtitlefont;52" shadowColor="#40101010" shadowOffset="3,3" />
