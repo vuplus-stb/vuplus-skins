@@ -2950,7 +2950,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="green" position="414,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="yellow" position="709,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
     <widget name="blue" position="1009,198" zPosition="1" size="225,31" font="Regular;30" halign="center" valign="center" backgroundColor="windowMainColorH" transparent="1" />
-    <widget name="list" position="300,240" size="675,233" backgroundColor="un27d9dee2" transparent="1" />
+    <widget name="list" position="300,240" size="675,233" font="Regular;28" itemHeight="32" backgroundColor="un27d9dee2" transparent="1" />
     <widget name="snr_db" position="315,533" size="225,33" halign="center" valign="center" font="Regular;31" backgroundColor="un27d9dee2" transparent="1" />
     <eLabel text="SNR:" position="225,570" size="90,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
     <eLabel text="BER:" position="225,608" size="90,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
@@ -2966,6 +2966,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="frequency_value" position="855,533" size="180,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
     <widget name="symbolrate_value" position="855,570" size="180,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
     <widget name="fec_value" position="855,608" size="180,33" font="Regular;31" backgroundColor="windowBackground" transparent="1" />
+  </screen>
+  <screen name="TunerScreen" position="center,center" size="780,618" title="Tune">
+    <widget name="config" position="15,15" size="750,525" font="Regular;28" itemHeight="32" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" zPosition="1" />
+    <widget name="introduction" position="15,548" size="750,60" font="Regular;30" halign="center" />
   </screen>
   <screen name="VideoEnhancementSetup" position="center,center" size="1288,923" title="VideoEnhancementSetup" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="Vu_HD_1080P/Bg_EPG_list.png" zPosition="-1" position="0,0" size="1288,923" alphatest="on" />
