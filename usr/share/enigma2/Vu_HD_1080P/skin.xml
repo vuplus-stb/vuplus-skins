@@ -714,6 +714,8 @@
     <widget source="Tuner3" render="Label" position="159,548" size="1000,50" font="Regular; 33" transparent="1" backgroundColor="windowMainColorL" />
     <widget source="HDDHeader" render="Label" position="159,599" size="1000,50" font="Regular; 33" transparent="1" backgroundColor="windowMainColorH" />
     <widget source="hddA" render="Label" position="159,650" size="1000,100" font="Regular; 33" transparent="1" backgroundColor="windowMainColorL" />
+    <widget source="NetworkHeader" render="Label" position="159,750" size="1000,50" font="Regular; 33" transparent="1" backgroundColor="windowMainColorL" />
+    <widget source="Network" render="Label" position="159,800" size="1000,100" font="Regular; 33" transparent="1" backgroundColor="windowMainColorH" />
   </screen>
   <!-- Adapter setup -->
   <screen name="AdapterSetup" position="center,center" size="1288,923" title="Network Setup" flags="wfNoBorder" backgroundColor="transparent">
