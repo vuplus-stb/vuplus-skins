@@ -658,7 +658,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint((720-wsizex)/2, (576-wsizey)/(count &gt; 7 and 2 or 3)))
+self.instance.move(ePoint((720-wsizex)//2, (576-wsizey)//(count &gt; 7 and 2 or 3)))
 
 		</applet>
 	</screen>
