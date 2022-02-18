@@ -1036,7 +1036,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
 		</applet>
 	</screen>
 	<!-- Minute input -->
@@ -2598,7 +2598,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 
 # center window
 newwidth = wsize[0]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
 		</applet>
 	</screen>
 
@@ -2693,7 +2693,7 @@ self[&quot;list&quot;].instance.resize(eSize(*listsize))
 # center window
 newwidth = wsize[0]
 newheight = wsize[1]
-self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y() + (orgheight - newheight)/2))
+self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y() + (orgheight - newheight)//2))
 		</applet>
 	</screen>
 
