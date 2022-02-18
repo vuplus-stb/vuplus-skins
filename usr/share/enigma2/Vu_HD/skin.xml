@@ -1745,6 +1745,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)//2, orgpos.y()))
 			<convert type="ServicePosition">Remaining</convert>
 		</widget>
 	</screen>
+	<!-- Infomation Screens -->
+	<screen name="AboutOE" position="fill" flags="wfNoBorder">
+		<panel name="__AboutTemplate__"/>
+		<eLabel conditional="lab3" text="Skin: Vu_HD skin" position="695*f, 560*f" size="575*f,30*f" font="Regular;22*f" halign="center" zPosition="1"/>
+		<eLabel conditional="lab3" text="By VuPlus" position="695*f, 590*f" size="575*f,30*f" font="Regular;22*f" halign="center" zPosition="1"/>
+	</screen>
 	<!-- Translator Info -->
 	<screen name="TranslationInfo" position="center,center" size="420,350" title="Translation">
 		<eLabel position="10,20" size="380,23" font="Regular;23" text="Translation:" />
